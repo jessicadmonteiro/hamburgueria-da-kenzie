@@ -45,6 +45,22 @@ const HeaderSyle = styled.header`
     border: transparent;
     border-radius: 8px;
   }
+
+  @media (max-width: 800px) {
+    height: 150px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+
+      span {
+        width: 100%;
+      }
+  }
 `
 
 export default HeaderSyle

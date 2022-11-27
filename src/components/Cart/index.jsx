@@ -1,4 +1,4 @@
-import { Aside, DivContainer } from "./style";
+import { Aside, DivContainer, EmptyBag } from "./style";
 
 function Cart({ cart, removeFromCart, Total, setCart}) {
 
@@ -12,21 +12,23 @@ function Cart({ cart, removeFromCart, Total, setCart}) {
       <section>
         {cart.length === 0 && (
           <>
-            <div>
+            <EmptyBag>
               <h3>Sua sacola está vazia</h3>
               <p>Adicione itens</p>
-            </div>
+            </EmptyBag>
           </>
         )}
 
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
+              <div>
               <img src={item.img} alt="" />
               <span>
                 <h3>{item.name}</h3>
                 <p>{item.category}</p>
               </span>
+              </div>
               <button onClick={() => removeFromCart(item.id)}>Remover</button>
             </li>
           ))}

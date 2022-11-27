@@ -13,25 +13,6 @@ export const Aside = styled.aside`
     padding: 20px 0 0 20px;
   }
 
-  div {
-    width: 100%;
-    height: 158px;
-    background: #f5f5f5;
-    text-align: center;
-    padding-top: 40px;
-    border-radius: 0px 0px 5px 5px;
-  }
-
-  h3 {
-    font-size: 18px;
-    color: #333333;
-  }
-
-  p {
-    font-size: 14px;
-    color: #828282;
-  }
-
   li {
     width: 100%;
     display: flex;
@@ -42,22 +23,25 @@ export const Aside = styled.aside`
   }
 
   img {
-    width: 25%;
-    height: 65px;
+    width: 50px;
     background: #e0e0e0;
     border-radius: 5px;
   }
 
-  span {
-    margin: -20px 0 0 -10px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
   }
 
-  li > span > h3 {
+  h3 {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  p {
     font-size: 12px;
-  }
-
-  li > span > p {
-    font-size: 10px;
+    color: #828282;
   }
 
   button {
@@ -65,13 +49,48 @@ export const Aside = styled.aside`
     color: #bdbdbd;
     border: transparent;
     background-color: transparent;
-    margin-top: -30px;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-left: 15px;
+
+    li {
+      padding: 0 20px;
+    }
+    img {
+      width: 50px;
+    }
+  }
+`;
+
+export const EmptyBag = styled.div`
+
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  border-radius: 0px 0px 5px 5px;
+
+  h3 {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #828282;
   }
 `;
 
 export const DivContainer = styled.div`
+  background: #f5f5f5;
   border-top: 2px solid #e0e0e0;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   div {
     width: 90%;
@@ -80,7 +99,7 @@ export const DivContainer = styled.div`
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: -40px;
+    margin-top: 20px;
   }
 
   h4 {
@@ -95,12 +114,12 @@ export const DivContainer = styled.div`
 
   button {
     width: 90%;
+    height: 60px;
     color: #828282;
     font-size: 16px;
     background: #e0e0e0;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
-    height: 60px;
     margin-top: 40px;
   }
 `;

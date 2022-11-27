@@ -4,6 +4,10 @@ export const DivContainer = styled.div`
   width: 70%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const Quest = styled.div`
@@ -36,6 +40,19 @@ export const Quest = styled.div`
     background: #27ae60;
     border: 2px solid #27ae60;
     border-radius: 8px;
+  }
+
+  @media (max-width: 844px) {
+    h2,
+    span {
+      font-size: 16px;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 12px;
+    }
   }
 `;
 
@@ -86,5 +103,13 @@ export const Ul = styled.ul`
     border: 2px solid #27ae60;
     border-radius: 8px;
     margin: 10px 20px;
+  }
+
+  @media (max-width: 800px) {
+    height: 350px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
+    
   }
 `;
