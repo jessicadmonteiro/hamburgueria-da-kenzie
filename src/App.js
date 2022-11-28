@@ -19,9 +19,9 @@ function App() {
     let arr = cart.find((element) => element.id === objectItem.id);
 
     if (arr === undefined) {
-      setCart([...cart, objectItem]);
+      setCart([...cart, objectItem])
     } else {
-      <ToastContainer />;
+      <ToastContainer />
       toast("🍔 Já possui este item no carrinho!", {
         position: "top-right",
         autoClose: 5000,
@@ -68,7 +68,6 @@ function App() {
         pauseOnHover
         theme="light"
       />
-      ;
       <GlobalStyle />
       <Header search={search} setSearch={setSearch} />
       <Conteiner>
