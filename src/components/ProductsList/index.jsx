@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { api } from "../../services/api";
 import {Ul, DivContainer, Quest } from "./styles";
 
-function ProductsList({ productsFilter, setProducts, search, setSearch, addItemToCart, price }) {
+function ProductsList({ productsFilter, setProducts, search, setSearch, addItemToCart }) {
 
   function removerSearch (setSearch) {
     setSearch("")

@@ -110,6 +110,7 @@ export const Ul = styled.ul`
     flex-wrap: nowrap;
     flex-direction: row;
     overflow-x: auto;
+    gap: 10px;
     
   }
 `;

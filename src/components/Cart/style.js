@@ -54,9 +54,15 @@ export const Aside = styled.aside`
   @media (max-width: 800px) {
     width: 100%;
     margin-left: 15px;
+    background: #f5f5f5;
+
+    h2 {
+      margin-bottom: 10px;
+    }
 
     li {
       padding: 0 20px;
+      margin-bottom: 10px;
     }
     img {
       width: 50px;
